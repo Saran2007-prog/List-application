@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            to_do_list
+        </title>
+    </head>
+    <style>
+        body{
+            border: 5px dashed black ;
+            margin:20px;
+            background-color: lightgoldenrodyellow;
+        }
+        h1{
+            background-color: black;
+            color:white;
+            display:inline-table;
+            float: left;
+            text-align: center;
+            text-transform:capitalize;
+            margin:0px;
+            padding:15px;
+            position:absolute;
+            border-radius: 30px;
+            top:0;
+            left:0;
+        }
+        h2{
+            text-align: left;
+            margin-top:50px;
+            margin-left: 15%;
+            text-transform:uppercase;
+            color:red;
+            font-size:2em;
+
+        }
+        #input{
+            margin-left:20%;    
+            font-size:xx-large;
+            overflow:hidden;
+            max-width: 20%;
+            border-color: black;
+            cursor:auto;
+        }
+        h3{
+            font-size: 1.5em;
+            text-transform:capitalize;
+            margin-left:10%;
+        }
+        body div span {
+            font-size:2em;
+            border:2px solid red;
+            padding:1px;
+            background-color:red;
+            color:white;
+            text-transform:capitalize; 
+        }
+        body div span:hover{
+            background-color: blue;
+            border-color:blue;
+        }
+        #priority{
+            margin-left:65%;
+            padding:15px;
+        }
+        select{
+            transition: 2s;
+        }
+        select:hover{
+            background-color: red;
+            transform: scale(1.0);
+            transition:2s;
+        }
+        #submit{
+            margin-left:75%;
+            font-size:2em;
+            margin-top:75%;
+            border:2px solid red;
+            padding:10px;
+            background-color:red;
+            color:white;
+            text-transform:capitalize;
+            cursor: pointer;
+        }
+        body div a div{
+            margin-left:25%;
+        }
+        #back{
+            margin-left:20px;  
+            background-color: red;
+            color:white;
+            padding:10px;
+            font-size:1.5em;
+            text-decoration:none;
+        }
+        #back:hover{
+            background-color: blue;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            background-color: blue;
+            border-color: blue;
+            border-radius:5px;
+        }
+    </style>
+    <body>
+        <h1>to do list</h1>
+        <div style="height: 600px;" id=" " class=" ">
+            <h2 > to do list:</h2>
+            <h3 title="enter the name of the task">enter the task:</h3>
+            <input type="text" required id="input" placeholder="Here..."><span id="add" href="#">add</span>
+            <h3 title="Deadline">due date:</h3>
+            <input type="text"required  id="input" placeholder="Here..."><span id="add" href="#">add</span>
+            <h3>priority:</h3>
+            <form id="input" >
+                <label for="priority" >select priority:</label> 
+                 <select name="priority" id="priority" >
+                    <option value="high">high</option>
+                    <option value="medium" selected>medium</option>
+                    <option value="low">low</option>
+                </select>
+                </form>
+                <a id="back" href="List Application.html">Back</a>
+                <a id="submit" onclick="addTask()" >submit</a>
+                
+        </div>
+        <script>
+            function addTask(){
+                if(document.getElementById("input").value===""){
+                    window.alert("please enter a task");
+                    document.getElementById("submit").href="to_do_list.html";
+                    return ;
+                }
+                else{
+                    window.alert("task added successfully");
+                    document.getElementById("submit").href="list application.html";
+                }
+            }
+            </script>  
+    </body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    background-color:rgba(0,0,0,1);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+button{
+    font-size: 1.5em;
+    background-color:aqua;
+    border:0px solid aqua;
+    border-radius: 3px;
+    padding:5px;
+    cursor:pointer;
+}
+body div a span{
+    border:2px solid rgba(255,0,0,1);
+    background-color: rgba(255,0,0,1);
+    padding:0px 5px;
+}
+#effect:hover{
+    color:white;
+
+}
+body div a span:hover{
+    color:white;
+    
+}
+.sidebar{
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: aqua;
+    overflow-x:hidden;
+    transition: o.5s;
+    padding-top: 60px;
+}
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    opacity: 0.8;
+    display:block;
+    transition:0.3s;
+}
+.sidebar a:hover{
+     color:crimson;
+}
+.sidebar .closeb {
+        position:absolute;
+        top:0;
+        right: 25px;
+        font-size:36px;
+        margin-left:50px;
+}
+.openb {
+        font-size: 20px;
+        background-color: black;
+         opacity: 0.8;
+        color:white;
+        padding:10px 15px;
+        border:none;
+}
+.openb:hover {
+    background-color: #444;
+}
+#main {
+    transition: margin-left .5s ;
+    padding:15px;
+}
+body h1{
+    background-color: aqua;
+    display:block;
+    color:black;
+    text-transform: uppercase;
+    padding:15px;
+    letter-spacing: 5px;
+    font-size:2.5em;
+}
+body h1 span{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:1.2em;
+    background-color: none;
+    padding:5px;
+    text-shadow: 5px 2px 3px white;
+    margin-top:0px;
+    overflow-Y:hidden;
+    padding-left: 0px ;
+    padding-right: 0px;
+}
+#listitem:hover{
+    background-color:aqua;
+    color:rgb(203, 8, 8);
+    opacity: 1;
+    cursor:pointer;
+}
+#login:hover{
+    background-color: white;
+    color:#000000;
+    
+}
+#login{
+    background-color:black;
+    color:white;
+    padding:5px;
+    font-size:1.2em;
+    float: right;
+    border-radius: 15px;
+    text-transform:capitalize;
+    text-decoration:none;
+}
